@@ -52,5 +52,5 @@ void vendor_load_properties()
 {
     property_override("ro.control_privapp_permissions", "log");
     property_override("ro.oem_unlock_supported", "0");
-    property_override("ro.product.model", "MA-A3");  // Get it? MA? MasterAwesome?? Also passes safetynet.
+    property_override("ro.product.model", "k_fene_8'd A3");  // customized phone model cuz branding and all...
 }
