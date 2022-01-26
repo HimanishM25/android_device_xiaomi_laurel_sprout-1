@@ -19,15 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Havoc-OS stuff
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
 
 TARGET_HAS_FOD := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_laurel_sprout
+PRODUCT_NAME := havoc_laurel_sprout
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
