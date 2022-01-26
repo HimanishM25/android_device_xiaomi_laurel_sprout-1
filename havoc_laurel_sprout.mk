@@ -42,3 +42,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 ALLOW_MISSING_DEPENDENCIES := true
+
+# Havoc
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.device.name=Xiaomi Mi A3 \
+    ro.havoc.group.url=https://t.me/havoc_mee_a3 \
+    ro.havoc.maintainer=Himanish M. \ 
+    ro.havoc.maintainer.username=k_fene_8
+
+HAVOC_BUILD_TYPE := Official
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS=true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+# Use gestures by default
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
