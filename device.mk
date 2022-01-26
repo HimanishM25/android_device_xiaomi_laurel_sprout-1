@@ -150,10 +150,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# OTA
-PRODUCT_PACKAGES += \
-    Updater
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi_trinket \
@@ -182,11 +178,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Update engine
 PRODUCT_PACKAGES += \
     bootctrl.trinket.recovery \
@@ -197,6 +188,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-# Lineage updater prop
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://gitlab.com/MasterAwesome/laurel_sprout-builds/-/raw/master/response.json
