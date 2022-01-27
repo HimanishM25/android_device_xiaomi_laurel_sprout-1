@@ -153,7 +153,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi_trinket \
     vendor.qti.hardware.perf@2.2 \
     init.dt2w.rc
-
+#Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+    
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/laurel_sprout
