@@ -28,7 +28,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 30
+PRODUCT_TARGET_VNDK_VERSION := current
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -60,7 +60,7 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -112,10 +112,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_trinket
-
-PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -176,9 +173,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnl
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -189,7 +183,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# Lineage updater prop
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://gitlab.com/MasterAwesome/laurel_sprout-builds/-/raw/master/response.json

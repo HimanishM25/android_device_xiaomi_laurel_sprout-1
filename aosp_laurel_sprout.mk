@@ -20,14 +20,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
 
 TARGET_HAS_FOD := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_laurel_sprout
+PRODUCT_NAME := aosp_laurel_sprout
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
@@ -40,5 +40,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="laurel_sprout"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+#Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_QUICK_TAP := true
 
 ALLOW_MISSING_DEPENDENCIES := true
