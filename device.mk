@@ -95,8 +95,8 @@ PRODUCT_PACKAGES += \
     Snap
 
 # Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
+#PRODUCT_PACKAGES += \
+ #   XiaomiParts
 
 # Display
 PRODUCT_PACKAGES += \
@@ -146,7 +146,7 @@ PRODUCT_PACKAGES += \
 # Pixel Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
-    product_charger_res_images
+    #product_charger_res_images
 
 # Power
 PRODUCT_PACKAGES += \
