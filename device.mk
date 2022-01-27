@@ -143,9 +143,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-# Offline charger resource
+# Pixel Offline charger
 PRODUCT_PACKAGES += \
-    charger_res_images
+    charger_res_images \
+    product_charger_res_images
 
 # OTA
 PRODUCT_PACKAGES += \
