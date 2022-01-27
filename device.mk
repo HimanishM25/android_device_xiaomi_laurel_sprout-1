@@ -156,7 +156,7 @@ PRODUCT_PACKAGES += \
 #Remove Packages
 PRODUCT_PACKAGES += \
     RemovePackages
-    
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/laurel_sprout
@@ -177,8 +177,8 @@ PRODUCT_PACKAGES += \
     libnl
 
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+   # WfdCommon
  
 
 # Update engine
