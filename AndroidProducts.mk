@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_laurel_sprout.mk
+    $(LOCAL_DIR)/cherish_laurel_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_laurel_sprout-userdebug \
-    aosp_laurel_sprout-eng
+    cherish_laurel_sprout-userdebug \
+    cherish_laurel_sprout-eng
 
