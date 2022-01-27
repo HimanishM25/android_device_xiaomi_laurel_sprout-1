@@ -148,10 +148,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
-# OTA
-PRODUCT_PACKAGES += \
-    Updater
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi_trinket \
